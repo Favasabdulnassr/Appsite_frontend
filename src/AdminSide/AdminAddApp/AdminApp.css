@@ -1,0 +1,100 @@
+
+
+.app-card {
+  background-color: var(--white);
+  border-radius: 0.75rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 1.25rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  width: 100%;
+  max-width: 700px; /* Increased max-width */
+  margin: 0 auto;
+
+}
+
+.app-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.app-image {
+  width: 90%;
+  height: 140px;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  margin: 0 auto 1rem auto;
+  background-color: #f5f5f5;
+}
+
+.app-image img {
+  width: 100%; /* Full width of container */
+  height: 100%; /* Full height of container */
+  object-fit: contain; /* Ensures full image is visible while maintaining aspect ratio */
+  padding: 0.5rem;
+}
+
+.app-card h3 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--text-dark);
+  margin: 0.5rem 0;
+  text-align: center; /* Center the title */
+}
+
+.app-card p {
+  color: var(--text-light);
+  margin: 0.25rem 0;
+  font-size: 0.875rem;
+  text-align: center; /* Center the text */
+}
+
+.update-points-btn {
+  margin-top: 1rem;
+  padding: 0.75rem 1rem;
+  background-color: var(--primary-color);
+  color: var(--white);
+  border: none;
+  border-radius: 0.5rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: 90%; /* Make button match image width */
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1200px) {
+
+  
+  .app-card {
+    max-width: 340px;
+  }
+}
+
+@media (max-width: 768px) {
+ 
+  .app-card {
+    max-width: 320px;
+    padding: 1rem;
+  }
+  
+  .app-image {
+    height: 130px;
+  }
+}
+
+@media (max-width: 480px) {
+
+  
+  .app-card {
+    max-width: 300px;
+  }
+  
+  .app-image {
+    height: 120px;
+  }
+}

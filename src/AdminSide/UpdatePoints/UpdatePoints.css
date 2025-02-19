@@ -1,0 +1,140 @@
+.update-points-container {
+    padding: 2rem;
+    max-width: 100%;
+    margin: 0 auto;
+  }
+  
+  .update-points-card {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 2rem;
+    max-width: 500px;
+    margin: 0 auto;
+  }
+  
+  .update-points-card h2 {
+    color: #1F2937;
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+    text-align: center;
+  }
+  
+  .app-details {
+    background-color: #F3F4F6;
+    padding: 1rem;
+    border-radius: 6px;
+    margin-bottom: 1.5rem;
+  }
+  
+  .app-details h3 {
+    color: #1F2937;
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .app-details p {
+    color: #6B7280;
+    font-size: 1rem;
+  }
+  
+  .form-group {
+    margin-bottom: 1.5rem;
+  }
+  
+  .form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: #374151;
+    font-weight: 500;
+  }
+  
+  .points-input {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #E5E7EB;
+    border-radius: 6px;
+    font-size: 1rem;
+    transition: border-color 0.2s ease;
+  }
+  
+  .points-input:focus {
+    outline: none;
+    border-color: #2563EB;
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+  }
+  
+  .button-group {
+    display: flex;
+    gap: 1rem;
+    justify-content: flex-end;
+  }
+  
+  .submit-button, .cancel-button {
+    padding: 0.75rem 1.5rem;
+    border-radius: 6px;
+    font-weight: 500;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.2s ease;
+  }
+  
+  .submit-button {
+    background-color: #2563EB;
+    color: white;
+    border: none;
+  }
+  
+  .submit-button:hover {
+    background-color: #1D4ED8;
+  }
+  
+  .submit-button:disabled {
+    background-color: #93C5FD;
+    cursor: not-allowed;
+  }
+  
+  .cancel-button {
+    background-color: white;
+    color: #4B5563;
+    border: 1px solid #E5E7EB;
+  }
+  
+  .cancel-button:hover {
+    background-color: #F3F4F6;
+  }
+  
+  .cancel-button:disabled {
+    background-color: #F3F4F6;
+    cursor: not-allowed;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .update-points-container {
+      padding: 1rem;
+    }
+  
+    .update-points-card {
+      padding: 1.5rem;
+    }
+  
+    .button-group {
+      flex-direction: column-reverse;
+    }
+  
+    .submit-button, .cancel-button {
+      width: 100%;
+    }
+  
+    /* Adjustments for mobile sidebar */
+    .main-content {
+      margin-left: 0;
+      width: 100%;
+    }
+  
+    .main-content.expanded {
+      margin-left: 0;
+    }
+  }
