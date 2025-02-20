@@ -172,6 +172,8 @@ const LoginModal = ({ onClose }) => {
 
 
 const SignupModal = ({ onClose }) => {
+  const {loader} = useSelector(state => state.login);
+
 
 
   
@@ -245,7 +247,7 @@ const formik = useFormik({
             )}
           </div>
           <button type="submit" className="button hero-cta">
-          {loader ? 'signing up....' : 'signup'}
+          {loader ? 'signing up.....' : 'signup'}
           </button>
         </form>
         <button className="modal-close" onClick={onClose}>
