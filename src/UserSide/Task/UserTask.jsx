@@ -157,7 +157,7 @@ const UserTask = () => {
                         </span>
                       </div>
                       <div className="task-screenshot">
-                        <img src={task.screenshot} alt="Task screenshot" />
+                        <img src={task.screenshot_url} alt="Task screenshot" />
                       </div>
                     </div>
                   ))}

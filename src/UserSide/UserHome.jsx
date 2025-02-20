@@ -85,8 +85,8 @@ const UserHome = () => {
     {filteredApps.map(app => (
       <div key={app.id} className="app-card">
         <div className="app-image">
-          {app.image ? (
-            <img src={app.image} alt={app.name} />
+          {app.image_url ? (
+            <img src={app.image_url} alt={app.name} />
           ) : (
             <div className="placeholder-image">
               {app.name.charAt(0)}

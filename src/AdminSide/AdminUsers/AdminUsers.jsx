@@ -98,7 +98,7 @@ const UsersAdminPage = () => {
                         <td>{task.app_name}</td>
                         <td>
                           <img 
-                            src={task.screenshot}
+                            src={task.screenshot_url}
                             alt="Task Screenshot"
                             className="w-20 h-20 object-cover rounded"
                           />

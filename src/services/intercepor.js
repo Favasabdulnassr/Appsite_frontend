@@ -6,7 +6,7 @@ import { logout } from "../Redux/loginReducer";
 
 
 const axiosInstance = axios.create({
-    baseURL:"https://appsite-backend.onrender.com",
+    baseURL:"http://127.0.0.1:8000/",
 });
 
 

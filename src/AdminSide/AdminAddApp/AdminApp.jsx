@@ -14,6 +14,8 @@ const AdminApps = () => {
   const fetchApps = async () => {
     try {
       const response = await axiosInstance.get('/apps/');
+      console.log('nooooooooooooooooooo',response.data);
+      
       
       setApps(response.data);
     } catch (error) {
@@ -41,9 +43,9 @@ const AdminApps = () => {
             </div>
               {apps.map(app => (
                 <div key={app.id} className="app-card">
-                  {app.image && (
+                  {app.image_url && (
                     <div className="app-image">
-                      <img src={app.image} alt={app.name} />
+                      <img src={app.image_url} alt={app.name} />
                     </div>
                   )}
                   <h3>{app.name}</h3>
