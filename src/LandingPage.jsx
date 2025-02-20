@@ -245,7 +245,7 @@ const formik = useFormik({
             )}
           </div>
           <button type="submit" className="button hero-cta">
-            Sign Up
+          {loader ? 'signing up....' : 'signup'}
           </button>
         </form>
         <button className="modal-close" onClick={onClose}>
